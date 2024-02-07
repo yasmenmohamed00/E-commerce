@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "categoryId": 1,
+      "name": "Electronics",
+      "subItems": ["Sub Item 1", "Sub Item 2", "Sub Item 3"],
+      "icon": "https://placehold.co/400"
+    },
+    {
+      "categoryId": 2,
+      "name": "Accessories",
+      "subItems": ["Sub Item 1", "Sub Item 2", "Sub Item 3", "Sub Item 4", "Sub Item 5"],
+      "icon": "https://placehold.co/400"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "categoryId": 1,
+      "name": "Smartphone XYZ",
+      "description": "Latest model of the XYZ smartphone with advanced features.",
+      "price": 799.99,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 35,
+      "ratings": {
+        "average": 4.5,
+        "totalReviews": 120
+      },
+      "images": [
+        "imageUrl1.jpg",
+        "imageUrl2.jpg"
+      ]
+    },
+    {
+      "id": 102,
+      "categoryId": 2,
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation.",
+      "price": 199.99,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 50,
+      "ratings": {
+        "average": 4.7,
+        "totalReviews": 80
+      },
+      "images": [
+        "imageUrl3.jpg",
+        "imageUrl4.jpg"
+      ]
+    }
+  ]
+}

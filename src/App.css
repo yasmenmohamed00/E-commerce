@@ -1,0 +1,13 @@
+
+body {
+    background-color: #f4f4f4 !important;
+}
+.navbar-brand{
+    background-image: url('./assets/images/logo.svg')!important;
+    background-size: cover !important;
+    width: 100px !important;
+    
+    background-position-y: center!important;
+    background-repeat: no-repeat;
+}
+
