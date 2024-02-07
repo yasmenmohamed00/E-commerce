@@ -5,6 +5,7 @@ import './SideMenu.css';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { fetchcatogries } from '../../utils/slice/getCatogries';
 import { AppDispatch, store, useAppSelector } from '../../utils/store';
+import  CustomSkeleton  from '../skeleton/skeleton';
 
 interface MenuItem {
   name: string;
@@ -13,8 +14,6 @@ interface MenuItem {
   subItems:string[];
   icon:string
 }
-
-
 
 const SideMenu: React.FC = () => {
   const [activeItem, setActiveItem] = useState<string | MenuItem>('');
@@ -29,7 +28,11 @@ const SideMenu: React.FC = () => {
     dispatch(fetchcatogries());
   }, [dispatch]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return  (
+    <>
+      <CustomSkeleton loading={isLoading} height={40} width={210} type={"rounded"} items={3}/>
+    </>
+      );
   if (isError) return <div>Error occurred</div>;
 
   const handleMouseEnter = (name: string, subItem?: string | MenuItem) => {
