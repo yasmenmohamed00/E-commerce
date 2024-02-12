@@ -3,52 +3,172 @@
     {
       "categoryId": 1,
       "name": "Electronics",
-      "subItems": ["Sub Item 1", "Sub Item 2", "Sub Item 3"],
+      "subItems": ["Smartphones & Accessories", "Computers & Tablets", "TVs & Home Theater"],
       "icon": "https://placehold.co/400"
     },
     {
       "categoryId": 2,
       "name": "Accessories",
+      "subItems": ["Fashion Accessories", "Bags & Wallets", "Tech Accessories"],
+      "icon": "https://placehold.co/400"
+    },
+    {
+      "categoryId": 3,
+      "name": "Health & Personal Care",
+      "subItems": ["Food & Beverage", "Medical devices & Supplies", "Sports & Fitness", "Beauty Products", "Personal Hygiene"],
+      "icon": "https://placehold.co/400"
+    },
+    {
+      "categoryId": 4,
+      "name": "Home Decor",
       "subItems": ["Sub Item 1", "Sub Item 2", "Sub Item 3", "Sub Item 4", "Sub Item 5"],
       "icon": "https://placehold.co/400"
     }
   ],
   "products": [
     {
-      "id": 101,
+      "id": 103,
       "categoryId": 1,
-      "name": "Smartphone XYZ",
-      "description": "Latest model of the XYZ smartphone with advanced features.",
-      "price": 799.99,
+      "name": "4K UHD Smart TV",
+      "description": "Experience stunning 4K UHD picture quality with smart streaming features.",
+      "price": 1200.00,
       "currency": "USD",
       "availability": true,
-      "availabilityCount": 35,
+      "availabilityCount": 20,
       "ratings": {
-        "average": 4.5,
-        "totalReviews": 120
+        "average": 4.8,
+        "totalReviews": 60
       },
-      "images": [
-        "imageUrl1.jpg",
-        "imageUrl2.jpg"
-      ]
+      "images": ["imageUrl5.jpg", "imageUrl6.jpg"],
+      "dateAdded": "2024-2-12"
     },
     {
-      "id": 102,
+      "id": 104,
+      "categoryId": 1,
+      "name": "Gaming Laptop Pro",
+      "description": "High-performance gaming laptop with top-of-the-line specs for gamers.",
+      "price": 1500.00,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 15,
+      "ratings": {
+        "average": 4.9,
+        "totalReviews": 100
+      },
+      "images": ["imageUrl7.jpg", "imageUrl8.jpg"],
+      "dateAdded": "2024-2-12"
+    },
+    {
+      "id": 105,
       "categoryId": 2,
-      "name": "Wireless Headphones",
-      "description": "High-quality wireless headphones with noise cancellation.",
-      "price": 199.99,
+      "name": "Elegant Watch",
+      "description": "Stylish and elegant watch perfect for all occasions.",
+      "price": 250.00,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 30,
+      "ratings": {
+        "average": 5,
+        "totalReviews": 45
+      },
+      "images": ["imageUrl9.jpg", "imageUrl10.jpg"],
+      "dateAdded": "2024-02-06"
+    },
+    {
+      "id": 106,
+      "categoryId": 2,
+      "name": "Leather Wallet",
+      "description": "Premium leather wallet with multiple compartments for cards and cash.",
+      "price": 60.00,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 40,
+      "ratings": {
+        "average": 4.5,
+        "totalReviews": 30
+      },
+      "images": ["imageUrl11.jpg", "imageUrl12.jpg"],
+      "dateAdded": "2024-02-05"
+    },
+    {
+      "id": 107,
+      "categoryId": 3,
+      "name": "Organic Green Tea",
+      "description": "Refreshing and healthy organic green tea, perfect for detox.",
+      "price": 15.99,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 100,
+      "ratings": {
+        "average": 4.7,
+        "totalReviews": 85
+      },
+      "images": ["imageUrl13.jpg", "imageUrl14.jpg"],
+      "dateAdded": "2024-2-12"
+    },
+    {
+      "id": 108,
+      "categoryId": 3,
+      "name": "Yoga Mat Premium",
+      "description": "Eco-friendly, non-slip yoga mat for all levels of yoga practitioners.",
+      "price": 40.00,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 60,
+      "ratings": {
+        "average": 5,
+        "totalReviews": 50
+      },
+      "images": ["imageUrl15.jpg", "imageUrl16.jpg"],
+      "dateAdded": "2024-02-03"
+    },
+    {
+      "id": 109,
+      "categoryId": 3,
+      "name": "Skincare Set",
+      "description": "Complete skincare set for all skin types, including cleanser, toner, and moisturizer.",
+      "price": 120.00,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 25,
+      "ratings": {
+        "average": 4.6,
+        "totalReviews": 40
+      },
+      "images": ["imageUrl17.jpg", "imageUrl18.jpg"],
+      "dateAdded": "2024-2-12"
+    },
+    {
+      "id": 110,
+      "categoryId": 4,
+      "name": "Modern Table Lamp",
+      "description": "Stylish modern table lamp to brighten up your workspace or living area.",
+      "price": 85.00,
+      "currency": "USD",
+      "availability": true,
+      "availabilityCount": 30,
+      "ratings": {
+        "average": 4.4,
+        "totalReviews": 25
+      },
+      "images": ["imageUrl19.jpg", "imageUrl20.jpg"],
+      "dateAdded": "2024-02-01"
+    },
+    {
+      "id": 111,
+      "categoryId": 4,
+      "name": "Decorative Vase",
+      "description": "Elegant decorative vase to enhance the beauty of your home decor.",
+      "price": 45.00,
       "currency": "USD",
       "availability": true,
       "availabilityCount": 50,
       "ratings": {
-        "average": 4.7,
-        "totalReviews": 80
+        "average": 5,
+        "totalReviews": 30
       },
-      "images": [
-        "imageUrl3.jpg",
-        "imageUrl4.jpg"
-      ]
+      "images": ["imageUrl21.jpg", "imageUrl22.jpg"],
+      "dateAdded": "2024-01-31"
     }
   ]
 }
