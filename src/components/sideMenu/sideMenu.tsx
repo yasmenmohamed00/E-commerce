@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import './SideMenu.css';
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import { fetchcatogries } from '../../utils/slice/getCatogries';
-import { AppDispatch, store, useAppSelector } from '../../utils/store';
+import { useDispatch } from 'react-redux';
+import { fetchcatogries } from '../../utils/Redux/getCatogries';
+import { AppDispatch, useAppSelector } from '../../utils/store';
 import  CustomSkeleton  from '../skeleton/skeleton';
 
 interface MenuItem {
@@ -28,11 +28,7 @@ const SideMenu: React.FC = () => {
     dispatch(fetchcatogries());
   }, [dispatch]);
 
-  if (isLoading) return  (
-    <>
-      <CustomSkeleton loading={isLoading} height={40} width={210} type={"rounded"} items={3}/>
-    </>
-      );
+  if (isLoading) return  <CustomSkeleton loading={isLoading} height={40} width="100%" type={"rounded"} items={4}/>
   if (isError) return <div>Error occurred</div>;
 
   const handleMouseEnter = (name: string, subItem?: string | MenuItem) => {
@@ -57,7 +53,7 @@ const SideMenu: React.FC = () => {
     <div className="side-menu" onMouseLeave={handleMouseLeaveMenu}>
       <h6>My markets</h6>
       {menuItems.map((menuItem) => (
-        <div className='mb-2'>
+        <div className='mb-2' key={menuItem.id}>
           <div
             className={`d-flex align-items-baseline menu-item justify-content-between p-2 ${activeItem === menuItem.name ? 'active' : ''}`}
             onMouseEnter={() => handleMouseEnter(menuItem.name)}
@@ -71,7 +67,7 @@ const SideMenu: React.FC = () => {
             <div className="sub-menu shadow-sm">
               {menuItem.subItems.map((subItem) => (
                 <div 
-                  className={`sub-menu-item ${activeSubMenu === subItem  ? 'active' : ''}`}
+                  className={`sub-menu-item ${activeSubMenu === subItem  ? 'active' : ''} p-2`}
                   onMouseEnter={() => handleMouseEnter(menuItem.name, subItem)}
                   onMouseLeave={handleMouseLeave}
                 >
