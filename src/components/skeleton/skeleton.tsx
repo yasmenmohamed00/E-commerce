@@ -5,8 +5,8 @@ import { OverridableStringUnion } from '@mui/types'; // Import if necessary for 
 
 interface SkeletonProps {
   loading?: boolean;
-  height: number;
-  width: number;
+  height: string | number;
+  width:  string | number;
   type: OverridableStringUnion<"text" | "rectangular" | "rounded" | "circular", {}>;
   items: number;
 }
