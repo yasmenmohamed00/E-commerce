@@ -4,15 +4,15 @@ import Benefit from '../components/benefitsCard/benefit';
 import NavBar from '../components/header/navBar';
 import ImgeHeader from '../components/header/imgHeader'
 import SideMenu from '../components/sideMenu/sideMenu';
-import NewArrivalItem from '../components/newArrivals/newArrivalsItem';
 import ProductList from '../components/products/productsList';
+import productSection from '../components/productSection/ProductSection'
 import Footer from '../components/fonter/footer';
+import ProductSections from '../components/productsections/ProductSections';
 
 const Home = () => {
 
   return (
     <>
-    
       <NavBar />
       <ImgeHeader imgUrl='https://placehold.co/400'/>
       <div className="container">
@@ -30,17 +30,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col">
-              <NewArrivalItem />
-            </div>
-            <div className="col">
-              <NewArrivalItem />
-            </div>
-            <div className="col">
-              <NewArrivalItem />
-            </div>
-          </div>
+          <ProductSections />
           <ProductList />
       </div>
       <Footer />
